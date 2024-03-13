@@ -22,7 +22,7 @@ export const SizeSelector:FC<Props> = ({ selectedSize, onSizeChange }) => {
     };
     return (
         
-        <div style={{display: 'flex'}}>
+        <div style={{display: 'block'}}>
             {
                 possiblesSizes.map( size => (
                     <button key={ size } className = { selectedSize === size ? 'active': '' } onClick={ () => onSizeChange( size ) }>
@@ -30,7 +30,7 @@ export const SizeSelector:FC<Props> = ({ selectedSize, onSizeChange }) => {
                     </button>
                 ))
             }
-            <div style={{ display: 'flex' }}> 
+            <div style={{display: 'block'}}> 
             <select id="size" value={ selectedSize } onChange={ handleChange }>
                 {
                     renderOptions()    
@@ -38,6 +38,7 @@ export const SizeSelector:FC<Props> = ({ selectedSize, onSizeChange }) => {
                 </select>
             </div>
         </div>
+        
     )
 }
 

@@ -23,3 +23,14 @@ button{
   transition: all .3s ease-out;
   border: none;
 }
+select{
+  background: white;
+  width: 75px;
+  color: black;
+  font-family: sans-serif;
+  position: relative;
+  font-weight: bold;
+  top: 100%;
+  text-align: center;
+  margin: 10px;
+}
